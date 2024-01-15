@@ -18,10 +18,10 @@ function App() {
       <Navebar/>
       <Routes>
         <Route path="/" element={<News/>}></Route>
-        {/* <Route path="/newsapple" element={<NewsApple/>}></Route>
+        <Route path="/newsapple" element={<NewsApple/>}></Route>
         <Route path="/newstesla" element={<NewsTesla/>}></Route>
         <Route path="/newsus" element={<NewsUS/>}></Route>
-        <Route path="/techcrunch" element={<TechCrunch/>}></Route> */}
+        <Route path="/techcrunch" element={<TechCrunch/>}></Route>
       </Routes>
     </Router>
     </>
