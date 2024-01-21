@@ -63,7 +63,6 @@
   }
 
   .card img {
-    max-width: 100%; /* Set the maximum width to 100% of its container */
     height: 250px; /* Ensure the height scales proportionally */
     object-fit: cover; /* Optional: Preserve aspect ratio and cover the entire container */
   }

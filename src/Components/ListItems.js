@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ListItems(props) {
   return (
-    <div className="card" style={{width: "18rem"}}>
+    <div className="card">
         <img src={props.image} className="card-img-top" alt={`${props.name}`}/>
         {console.log(props.imageUrl)}
         <div className="card-body">
