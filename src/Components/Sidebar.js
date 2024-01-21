@@ -7,7 +7,7 @@ export default function Sidebar() {
         <dt><a href="/people">People</a></dt><br/>
         <dt><a href="/spaceship">Spaceships</a></dt><br/>
         <dt><a href="/vehicle">Vehicles</a></dt><br/>
-        {/* <dt><a href="/planets">Planets</a></dt><br/> */}
+        <dt><a href="/planet">Planets</a></dt><br/>
       </dl>
     </div>
   )

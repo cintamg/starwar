@@ -1,38 +1,38 @@
 import React, { useEffect, useState } from 'react'
 import ListItems from './ListItems';
 
-export default function Vehicle() {
+export default function Planet() {
 
-    const [vehicle,setVehicle] = useState([]);
+    const [planet,setPlanet] = useState([]);
 
     const imageUrls =[
-        "VehicleImg/img1.png",
-        "VehicleImg/img2.png",
-        "VehicleImg/img3.png",
-        "VehicleImg/img4.png",
-        "VehicleImg/img5.png",
-        "VehicleImg/img6.png",
-        "VehicleImg/img7.png",
-        "VehicleImg/img8.png",
-        "VehicleImg/img9.png",
-        "VehicleImg/img10.png",
+        "PlanetImg/img1.png",
+        "PlanetImg/img2.png",
+        "PlanetImg/img3.png",
+        "PlanetImg/img4.png",
+        "PlanetImg/img5.png",
+        "PlanetImg/img6.png",
+        "PlanetImg/img7.png",
+        "PlanetImg/img8.png",
+        "PlanetImg/img9.png",
+        "PlanetImg/img10.png",
     ];
 
     useEffect( () => {
         const fetchData = async () => {
-            const url = "https://swapi.dev/api/vehicles/";
+            const url = "https://swapi.dev/api/people/";
             const response = await fetch(url);
             const data = await response.json();
-            setVehicle(data.results);
+            setPlanet(data.results);
         }
         fetchData();
     },[])
 
   return (
     <div className='container'>
-        <h1 className="text text-center">VEHICLES</h1>
+        <h1 className="text text-center">CHARACTERS</h1>
     <div className="row">
-        {vehicle.map((element,index) => {
+        {planet.map((element,index) => {
                 return(
                     <div className="col-md-4 my-3" key={index}>
                         <ListItems name={element.name} image={imageUrls[index]} url={element.url}/>
