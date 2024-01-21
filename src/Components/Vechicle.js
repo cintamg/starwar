@@ -1,38 +1,38 @@
 import React, { useEffect, useState } from 'react'
 import ListItems from './ListItems';
 
-export default function Spaceship() {
+export default function Vehicle() {
 
-    const [spaceShip,setSpaceShip] = useState([]);
+    const [vehicle,setVehicle] = useState([]);
 
     const imageUrls =[
-        "SpaceShipImg/img1.png",
-        "SpaceShipImg/img2.png",
-        "SpaceShipImg/img3.webp",
-        "SpaceShipImg/img4.webp",
-        "SpaceShipImg/img5.png",
-        "SpaceShipImg/img6.png",
-        "SpaceShipImg/img7.png",
-        "SpaceShipImg/img8.png",
-        "SpaceShipImg/img9.png",
-        "SpaceShipImg/img10.png",
+        "VehicleImg/img1.png",
+        "VehicleImg/img2.png",
+        "VehicleImg/img3.webp",
+        "VehicleImg/img4.webp",
+        "VehicleImg/img5.png",
+        "VehicleImg/img6.png",
+        "VehicleImg/img7.png",
+        "VehicleImg/img8.png",
+        "VehicleImg/img9.png",
+        "VehicleImg/img10.png",
     ];
 
     useEffect( () => {
         const fetchData = async () => {
-            const url = "https://swapi.dev/api/starships/";
+            const url = "https://swapi.dev/api/vehicles/";
             const response = await fetch(url);
             const data = await response.json();
-            setSpaceShip(data.results);
+            setVehicle(data.results);
         }
         fetchData();
     },[])
 
   return (
     <div className='container'>
-        <h1 className="text text-center">SPACE SHIPS</h1>
+        <h1 className="text text-center">VEHICLES</h1>
     <div className="row">
-        {spaceShip.map((element,index) => {
+        {vehicle.map((element,index) => {
                 return(
                     <div className="col-md-4 my-3" key={index}>
                         <ListItems name={element.name} image={imageUrls[index]} url={element.url}/>

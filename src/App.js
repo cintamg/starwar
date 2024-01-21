@@ -3,6 +3,7 @@ import Navebar from "./Components/Navebar";
 import People from "./Components/People";
 import Spaceship from "./Components/Spaceship";
 import Sidebar from "./Components/Sidebar";
+import Vehicle from "./Components/Vechicle";
 import './style.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Routes>
       <Route path="/people" element={<People/>}></Route>
       <Route path="/spaceship" element={<Spaceship/>}></Route>
+      <Route path="/vehicle" element={<Vehicle/>}></Route>
     </Routes>
     </Router>
     </>
