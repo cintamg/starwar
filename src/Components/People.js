@@ -29,16 +29,17 @@ export default function People() {
     },[])
 
   return (
-    <>
+    <div className='container'>
+        <h1 className="text text-center">CHARACTERS</h1>
     <div className="row">
         {people.map((element,index) => {
                 return(
                     <div className="col-md-4 my-3" key={index}>
-                        <ListItems name={element.name} birth_year={element.birth_year} gender={element.gender} image={imageUrls[index]} url={element.homeworld}/>
+                        <ListItems name={element.name} image={imageUrls[index]} url={element.homeworld}/>
                     </div>
                 );
             })}
     </div>
-    </>
+    </div>
   )
 }

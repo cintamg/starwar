@@ -1,0 +1,75 @@
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    font-family: 'Arial', sans-serif;
+  }
+
+  .container {
+    padding-top: 60px;
+    padding-left: 200px;
+  }
+
+  .sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding-top: 70px;
+    padding-left: 20px;
+    position: fixed;
+    height: 100%;
+  }
+
+  .sidebar dl {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .sidebar di {
+    padding: 10px 10px 30px 10px;
+  }
+  
+  .sidebar a {
+    color: inherit; /* Inherit the color from the parent element (navbar) */
+    text-decoration: none; /* Remove underlines from links */
+    border: 2px solid transparent; /* Set initial border style */
+    padding: 5px; /* Add padding for better visibility */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  .sidebar a:hover {
+    background-color: rgb(179, 157, 157);
+  }
+
+  .card {
+    width: 300px; /* Adjust the width as per your design */
+    height: 400px; /* Adjust the height as per your design */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+    box-sizing: border-box; /* Ensures that padding and border are included in the total width and height */
+    margin: 10px; /* Optional: Add margin for spacing between cards */
+  }
+  
+  /* Additional styling for card content, if needed */
+  .card p {
+    /* Example: Style for paragraph text inside the card */
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .card img {
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: 250px; /* Ensure the height scales proportionally */
+    object-fit: cover; /* Optional: Preserve aspect ratio and cover the entire container */
+  }
+
+  .text {
+    color: rgb(49, 25, 25);
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
