@@ -5,23 +5,27 @@ import Spaceship from "./Components/Spaceship";
 import Sidebar from "./Components/Sidebar";
 import Vehicle from "./Components/Vechicle";
 import Planet from "./Components/Planet";
+import Home from "./Components/Home";
 import './style.css';
 
 function App() {
   return (
-    <>
-    <Router>
-    <Navebar/>
-    <Sidebar/>
-    <Routes>
-      <Route path="/people" element={<People/>}></Route>
-      <Route path="/spaceship" element={<Spaceship/>}></Route>
-      <Route path="/vehicle" element={<Vehicle/>}></Route>
-      <Route path="/planet" element={<Planet/>}></Route>
-    </Routes>
-    </Router>
-    </>
+    <div className="app">
+      <Router>
+      <Navebar/>
+      <Sidebar/>
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/people" element={<People/>}></Route>
+          <Route path="/spaceship" element={<Spaceship/>}></Route>
+          <Route path="/vehicle" element={<Vehicle/>}></Route>
+          <Route path="/planet" element={<Planet/>}></Route>
+        </Routes>
+      </div>
+      </Router>
+    </div>
   );
-}
+};
 
 export default App;

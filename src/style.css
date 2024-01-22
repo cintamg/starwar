@@ -8,6 +8,10 @@
     font-family: 'Arial', sans-serif;
   }
 
+  /* .app {
+    display: flex;
+  } */
+
   .container {
     padding-top: 60px;
     padding-left: 200px;
@@ -97,4 +101,55 @@
 
   .container btn {
     margin-top: 30px;
+  }
+
+  .home {
+    margin-top: 42px; 
+    color: rgb(18, 78, 58);
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: auto;
+    overflow: hidden;
+    margin-top: 0px;
+  }
+  
+  .slides {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: transform 0.5s ease-in-out;
+    height: 453px;
+  }
+
+  .slides img{
+    height: 400px;
+    /* width: 500px; */
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 215px;
+    font-size: 50px;
+  }
+  
+  .next {
+    right: 10px;
+    font-size: 50px;
+  }
+
+  .home {
+    margin-left: 200px;
+    margin-top: 50px;
+    padding: 51px;
+    background-color: rgb(162, 180, 207);
   }
