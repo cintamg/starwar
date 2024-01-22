@@ -13,7 +13,7 @@
   } */
 
   .container {
-    padding-top: 60px;
+    padding-top: 90px;
     padding-left: 200px;
   }
 
@@ -100,11 +100,11 @@
   }
 
   .container btn {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .home {
-    margin-top: 42px; 
+    /* margin-top: 42px;  */
     color: rgb(18, 78, 58);
   }
 
@@ -152,4 +152,8 @@
     margin-top: 50px;
     padding: 51px;
     background-color: rgb(162, 180, 207);
+  }
+
+  .navbar img {
+    height: 50px;
   }
