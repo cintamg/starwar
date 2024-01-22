@@ -12,6 +12,12 @@
     display: flex;
   } */
 
+  .about p {
+    padding-top: 100px;
+    padding-left: 250px;
+    padding-right: 50px;
+  }
+
   .container {
     padding-top: 90px;
     padding-left: 200px;

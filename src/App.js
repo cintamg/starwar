@@ -6,6 +6,7 @@ import Sidebar from "./Components/Sidebar";
 import Vehicle from "./Components/Vechicle";
 import Planet from "./Components/Planet";
 import Home from "./Components/Home";
+import About from "./Components/About";
 import './style.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Sidebar/>
       <div className="main-content">
         <Routes>
+          <Route path="/about" element={<About/>}></Route>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/people" element={<People/>}></Route>
           <Route path="/spaceship" element={<Spaceship/>}></Route>
