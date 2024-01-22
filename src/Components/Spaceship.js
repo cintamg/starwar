@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import ListItems from './ListItems';
+import SpaceItems from './SpaceItems';
+import { Link } from 'react-router-dom';
 
 export default function Spaceship() {
 
@@ -30,16 +31,17 @@ export default function Spaceship() {
 
   return (
     <div className='container'>
+        <Link to="/"><button className='btn btn-dark'>Back Home</button></Link>
         <h1 className="text text-center">SPACE SHIPS</h1>
-    <div className="row">
-        {spaceShip.map((element,index) => {
-                return(
-                    <div className="col-md-4 my-3" key={index}>
-                        <ListItems name={element.name} image={imageUrls[index]} url={element.url}/>
-                    </div>
-                );
-            })}
-    </div>
+        <div className="row">
+            {spaceShip.map((element,index) => {
+                    return(
+                        <div className="col-md-4 my-3" key={index}>
+                            <SpaceItems name={element.name} pilots={element.pilots} image={imageUrls[index]} model={element.model} url={element.url}/>
+                        </div>
+                    );
+                })}
+        </div>
     </div>
   )
 }

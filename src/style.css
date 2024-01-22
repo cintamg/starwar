@@ -49,14 +49,29 @@
 
   .card {
     width: 300px; /* Adjust the width as per your design */
-    height: 400px; /* Adjust the height as per your design */
+    height: 420px; /* Adjust the height as per your design */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
     box-sizing: border-box; /* Ensures that padding and border are included in the total width and height */
     margin: 10px; /* Optional: Add margin for spacing between cards */
   }
+
+  .card-new {
+    width: 300px; /* Adjust the width as per your design */
+    height: 550px; /* Adjust the height as per your design */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+    box-sizing: border-box; /* Ensures that padding and border are included in the total width and height */
+    margin: 10px; /* Optional: Add margin for spacing between cards */
+    padding: 10px;
+  }
   
   /* Additional styling for card content, if needed */
   .card p {
+    /* Example: Style for paragraph text inside the card */
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .card-new p {
     /* Example: Style for paragraph text inside the card */
     margin: 10px;
     font-size: 16px;
@@ -68,8 +83,18 @@
     height: 300px;
   }
 
+  .card-new img {
+    object-fit: cover; /* Optional: Preserve aspect ratio and cover the entire container */
+    width: 100%;
+    height: 300px;
+  }
+
   .text {
     color: rgb(49, 25, 25);
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
+  }
+
+  .container btn {
+    margin-top: 30px;
   }
